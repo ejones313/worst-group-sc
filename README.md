@@ -38,7 +38,7 @@ python3 src/run_expt.py -s confounder -d CheXpert -t Pleural_Effusion -c Support
 Here, `CheXpert-v1.0-smal`l is the folder containing the small version of the downloaded CheXpert dataset. You will first need to filter the downloaded `metadata.csv` file with to only contain entries with `Path` contained within the `chexpert_paths.csv` file available on codalab. [CodaLab](https://worksheets.codalab.org/rest/bundles/0x0ea792f3d6b74e65bbbe76086b0704ce/contents/blob/chexpert_paths.csv)
 Ensure that the `split` column from `chexpert_paths.csv` also translates over. 
 
-### Plotting resultsd
+### Plotting results
 Next, given saved models, we compute and plot the accuracy-coverage curves, along with the group-agnostic reference, the Robin Hood reference, and the margin distributions. To do so, ensure the saved `preds` folder from the previous step, for each `dataset` for ERM, ERM with dropout, and MC-Dropout, are stored in `dataset-ERM`, `dataset-DRO`, and `dataset-MC` respectively. Then, to plot figures, run:
 
 ```
